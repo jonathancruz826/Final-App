@@ -1,0 +1,138 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6e7a9c, #4e5b74);
+    color: #f1f1f1;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo del formulario */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form h2 {
+    color: #34495e;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 16px;
+    color: #34495e;
+}
+
+form input[type="text"], form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    background-color: #ecf0f1;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el botón de "Volver al inicio" */
+form a button {
+    width: 100%;
+    padding: 12px;
+    background-color: #95a5a6;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form a button:hover {
+    background-color: #7f8c8d;
+}
+
+/* Mensajes de éxito o error */
+.success {
+    color: green;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Media Queries para hacerlo responsivo */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 20px;
+        max-width: 90%;
+    }
+
+    form h2 {
+        font-size: 1.5rem;
+    }
+
+    form label, form input[type="text"], form input[type="password"], form button {
+        font-size: 14px;
+    }
+
+    form a button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    form h2 {
+        font-size: 1.2rem;
+    }
+
+    form label, form input[type="text"], form input[type="password"], form button {
+        font-size: 12px;
+    }
+
+    form a button {
+        font-size: 14px;
+    }
+}
